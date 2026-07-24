@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "quienesSomos": "Quiénes somos",
+    "servicios": "Servicios",
+    "herramientas": "Herramientas"
+  },
+  "home": {
+    "title": "APM Gestión",
+    "subtitle": "Sitio en construcción"
+  },
+  "quienesSomos": {
+    "title": "Quiénes somos",
+    "subtitle": "Contenido en construcción"
+  },
+  "servicios": {
+    "title": "Servicios",
+    "subtitle": "Contenido en construcción"
+  },
+  "herramientas": {
+    "title": "Herramientas",
+    "subtitle": "Contenido en construcción"
+  }
+}

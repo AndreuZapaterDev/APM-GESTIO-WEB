@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "inicio": "Inici",
+    "quienesSomos": "Qui som",
+    "servicios": "Serveis",
+    "herramientas": "Eines"
+  },
+  "home": {
+    "title": "APM Gestió",
+    "subtitle": "Lloc en construcció"
+  },
+  "quienesSomos": {
+    "title": "Qui som",
+    "subtitle": "Contingut en construcció"
+  },
+  "servicios": {
+    "title": "Serveis",
+    "subtitle": "Contingut en construcció"
+  },
+  "herramientas": {
+    "title": "Eines",
+    "subtitle": "Contingut en construcció"
+  }
+}

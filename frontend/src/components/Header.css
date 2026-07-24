@@ -34,6 +34,34 @@
   }
 }
 
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+
+  button {
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-h);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+
+    &:hover {
+      border-color: var(--accent);
+    }
+
+    &.active {
+      color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .site-header {
     flex-direction: column;
