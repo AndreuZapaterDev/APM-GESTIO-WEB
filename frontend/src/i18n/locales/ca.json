@@ -3,22 +3,127 @@
     "inicio": "Inici",
     "quienesSomos": "Qui som",
     "servicios": "Serveis",
-    "herramientas": "Eines"
+    "herramientas": "Eines",
+    "actualidad": "Actualitat"
   },
   "home": {
     "title": "APM Gestió",
-    "subtitle": "Lloc en construcció"
+    "tagline": "Assessoria Fiscal, Laboral i Comptable",
+    "hero": {
+      "ctaPrimary": "Sol·licitar informació",
+      "ctaSecondary": "Coneix-nos"
+    },
+    "intro": [
+      "Benvinguts a la nostra <strong>assessoria laboral, fiscal i comptable</strong> a Lleida. Amb <strong>més de 30 anys d'experiència</strong>, oferim serveis integrals i personalitzats per a empreses i particulars.",
+      "El nostre equip de professionals altament qualificats està a l'avantguarda de les últimes novetats del mercat. Ens distingim per la qualitat, la transparència i l'eficiència en la nostra feina.",
+      "Si busques una assessoria fiable i amb experiència a Lleida, no dubtis a contactar-nos."
+    ],
+    "services": {
+      "heading": "Els nostres serveis",
+      "readMore": "Llegir més",
+      "items": [
+        { "title": "Fiscal" },
+        { "title": "Laboral" },
+        { "title": "Comptable" }
+      ]
+    },
+    "rates": {
+      "heading": "Tarifes i taules",
+      "items": [
+        {
+          "title": "Bases i tipus de cotització en el Règim General",
+          "description": "Conegui els límits mínims i màxims i el cost de les cotitzacions socials."
+        },
+        {
+          "title": "Bases i tipus de cotització en el RETA",
+          "description": "Conegui les bases de cotització en el Règim d'Autònoms per al 2026."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Professionalitat i valor humà",
+      "description": "Comptem amb un equip altament capacitat i amb una àmplia experiència en les diverses àrees del dret."
+    },
+    "calendar": {
+      "heading": "Calendari",
+      "placeholder": "Contingut en construcció"
+    },
+    "contact": {
+      "heading": "Sol·licitud de contacte",
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "phone": "Telèfon",
+      "message": "Missatge",
+      "submit": "Enviar"
+    }
   },
   "quienesSomos": {
     "title": "Qui som",
-    "subtitle": "Contingut en construcció"
+    "tagline": "Assessoria Laboral, Fiscal i Comptable a Lleida",
+    "paragraphs": [
+      "Benvinguts a APM GESTIO, la seva gestoria de confiança a Lleida. Amb més de 30 anys d'experiència en el sector, som el seu aliat estratègic per a la gestió i l'assessorament en àrees fiscals, comptables, jurídiques i laborals.",
+      "La nostra missió és oferir un servei d'alta qualitat i personalitzat per satisfer les seves necessitats individuals o empresarials. Entenem que cada client és únic i per això ens adaptem a vostè, oferint solucions a mida.",
+      "A APM GESTIO, combinem la tradició i l'experiència de tres dècades amb una visió innovadora, integrant les últimes tecnologies per optimitzar els nostres serveis i oferir-li la màxima eficiència.",
+      "Tant si necessita ajuda amb la planificació fiscal, la comptabilitat de la seva empresa, qüestions jurídiques o la gestió laboral, el nostre equip d'experts és aquí per assessorar-lo i guiar-lo en cada pas del camí.",
+      "Confiï en APM GESTIO, la seva gestoria a Lleida, on l'experiència i la dedicació s'uneixen per oferir-li el millor servei. El seu èxit és el nostre compromís."
+    ]
   },
   "servicios": {
-    "title": "Serveis",
-    "subtitle": "Contingut en construcció"
+    "fiscal": {
+      "title": "Fiscal",
+      "tagline": "Assessoria Fiscal a Lleida",
+      "items": [
+        "Planificació fiscal de l'exercici amb seguiment periòdic, comprovació d'objectius i liquidació fiscal.",
+        "Comunicació de novetats fiscals.",
+        "Assessorament en matèria tributària.",
+        "Representació i defensa.",
+        "Gestió i liquidació dels impostos obligatoris de tot tipus d'empreses i persones físiques empresaris i professionals."
+      ]
+    },
+    "laboral": {
+      "title": "Laboral",
+      "tagline": "Assessoria Laboral a Lleida",
+      "items": [
+        "Assessorament integral a empreses i treballadors.",
+        "Assessorament a col·lectius.",
+        "Negociació de convenis.",
+        "Actuació als Jutjats Socials en totes les matèries (acomiadament, sanció, reclamacions de quantitat, modificació substancial, classificació professional,…).",
+        "Accidents de treball.",
+        "Recàrrec de prestacions.",
+        "Incapacitats permanents.",
+        "Impugnacions d'alta.",
+        "Confecció mensual de nòmines.",
+        "Confecció de contractes laborals.",
+        "Alta i baixa d'empleats.",
+        "Estudi d'avantatges de contractació.",
+        "Presentació d'assegurances socials.",
+        "Representació requeriments de la Seguretat Social.",
+        "Tramitació de jubilació.",
+        "Reclamació de salaris.",
+        "Expedients de Regulació Temporal d'Ocupació.",
+        "Pensions d'invalidesa.",
+        "Indemnitzacions.",
+        "Redacció de contractes."
+      ]
+    },
+    "contable": {
+      "title": "Comptable",
+      "tagline": "Assessoria Comptable a Lleida",
+      "items": [
+        "Control continu de la comptabilitat financera.",
+        "Comptabilitat de societats.",
+        "Comptabilitat d'autònoms.",
+        "Control de costos.",
+        "Assessorament en ràtios financers."
+      ]
+    }
   },
   "herramientas": {
     "title": "Eines",
+    "subtitle": "Contingut en construcció"
+  },
+  "actualidad": {
+    "title": "Actualitat",
     "subtitle": "Contingut en construcció"
   }
 }

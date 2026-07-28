@@ -3,22 +3,127 @@
     "inicio": "Home",
     "quienesSomos": "About us",
     "servicios": "Services",
-    "herramientas": "Tools"
+    "herramientas": "Tools",
+    "actualidad": "News"
   },
   "home": {
     "title": "APM Gestión",
-    "subtitle": "Site under construction"
+    "tagline": "Tax, Payroll and Accounting Advisory",
+    "hero": {
+      "ctaPrimary": "Request information",
+      "ctaSecondary": "About us"
+    },
+    "intro": [
+      "Welcome to our <strong>tax, payroll and accounting advisory firm</strong> in Lleida. With <strong>more than 30 years of experience</strong>, we offer comprehensive, tailored services for businesses and individuals.",
+      "Our team of highly qualified professionals stays at the forefront of the latest market developments. We stand out for the quality, transparency and efficiency of our work.",
+      "If you are looking for a reliable, experienced advisory firm in Lleida, do not hesitate to contact us."
+    ],
+    "services": {
+      "heading": "Our services",
+      "readMore": "Read more",
+      "items": [
+        { "title": "Tax" },
+        { "title": "Payroll" },
+        { "title": "Accounting" }
+      ]
+    },
+    "rates": {
+      "heading": "Rates and tables",
+      "items": [
+        {
+          "title": "Contribution bases and rates under the General Regime",
+          "description": "Find the minimum and maximum limits and the cost of social security contributions."
+        },
+        {
+          "title": "Contribution bases and rates under the RETA",
+          "description": "Find the self-employed contribution bases for 2026."
+        }
+      ]
+    },
+    "value": {
+      "heading": "Professionalism and human value",
+      "description": "We have a highly trained team with extensive experience across the various areas of law."
+    },
+    "calendar": {
+      "heading": "Calendar",
+      "placeholder": "Content under construction"
+    },
+    "contact": {
+      "heading": "Contact request",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send"
+    }
   },
   "quienesSomos": {
     "title": "About us",
-    "subtitle": "Content under construction"
+    "tagline": "Payroll, Tax and Accounting Advisory in Lleida",
+    "paragraphs": [
+      "Welcome to APM GESTIO, your trusted advisory firm in Lleida. With more than 30 years of experience in the sector, we are your strategic partner for management and advice in tax, accounting, legal and payroll matters.",
+      "Our mission is to provide a high-quality, personalized service to meet your individual or business needs. We understand that every client is unique, so we adapt to you, offering tailor-made solutions.",
+      "At APM GESTIO, we combine three decades of tradition and experience with an innovative outlook, integrating the latest technologies to optimize our services and offer you maximum efficiency.",
+      "Whether you need help with tax planning, your company's accounting, legal matters or payroll management, our team of experts is here to advise and guide you every step of the way.",
+      "Trust APM GESTIO, your advisory firm in Lleida, where experience and dedication come together to provide you with the best service. Your success is our commitment."
+    ]
   },
   "servicios": {
-    "title": "Services",
-    "subtitle": "Content under construction"
+    "fiscal": {
+      "title": "Tax",
+      "tagline": "Tax Advisory in Lleida",
+      "items": [
+        "Annual tax planning with periodic monitoring, goal tracking and tax settlement.",
+        "Updates on tax law changes.",
+        "Tax advisory services.",
+        "Representation and defense.",
+        "Management and settlement of mandatory taxes for all types of companies and self-employed individuals and professionals."
+      ]
+    },
+    "laboral": {
+      "title": "Payroll",
+      "tagline": "Payroll Advisory in Lleida",
+      "items": [
+        "Comprehensive advice for companies and employees.",
+        "Advice for collective groups.",
+        "Collective bargaining agreement negotiation.",
+        "Representation before Labor Courts in all matters (dismissal, sanctions, wage claims, substantial changes, professional classification,…).",
+        "Workplace accidents.",
+        "Benefit surcharges.",
+        "Permanent disabilities.",
+        "Registration challenges.",
+        "Monthly payroll preparation.",
+        "Drafting of employment contracts.",
+        "Employee registration and termination.",
+        "Hiring incentive analysis.",
+        "Social security filings.",
+        "Representation before Social Security requirements.",
+        "Retirement processing.",
+        "Wage claims.",
+        "Temporary Layoff Plans (ERTE).",
+        "Disability pensions.",
+        "Severance payments.",
+        "Contract drafting."
+      ]
+    },
+    "contable": {
+      "title": "Accounting",
+      "tagline": "Accounting Advisory in Lleida",
+      "items": [
+        "Ongoing financial accounting control.",
+        "Corporate accounting.",
+        "Self-employed accounting.",
+        "Cost control.",
+        "Financial ratio advisory."
+      ]
+    }
   },
   "herramientas": {
     "title": "Tools",
+    "subtitle": "Content under construction"
+  },
+  "actualidad": {
+    "title": "News",
     "subtitle": "Content under construction"
   }
 }
