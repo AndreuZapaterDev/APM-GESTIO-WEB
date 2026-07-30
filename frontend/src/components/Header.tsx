@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FileText, Users, BarChart3 } from 'lucide-react'
+import { FileText, Users, BarChart3, Home, Building2, Briefcase, Wrench, Newspaper } from 'lucide-react'
 import logo from '../assets/APMGESTIO_LOGO.png'
 
 const languages = [
@@ -17,14 +17,22 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [servicesHover, setServicesHover] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const linksBefore = [
-    { to: '/', label: t('nav.inicio') },
-    { to: '/quienes-somos', label: t('nav.quienesSomos') },
+    { to: '/', label: t('nav.inicio'), icon: Home },
+    { to: '/quienes-somos', label: t('nav.quienesSomos'), icon: Building2 },
   ]
   const linksAfter = [
-    { to: '/herramientas', label: t('nav.herramientas') },
-    { to: '/actualidad', label: t('nav.actualidad') },
+    { to: '/herramientas', label: t('nav.herramientas'), icon: Wrench },
+    { to: '/actualidad', label: t('nav.actualidad'), icon: Newspaper },
   ]
   const serviceLinks = [
     { to: '/servicios/fiscal', label: t('servicios.fiscal.title'), icon: FileText },
@@ -34,12 +42,12 @@ function Header() {
   const servicesActive = location.pathname.startsWith('/servicios')
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `border-b-2 pb-1 font-medium text-neutral-950 no-underline transition-colors hover:text-accent ${
+    `inline-flex items-center gap-1.5 border-b-2 pb-1 font-medium text-neutral-950 no-underline transition-colors hover:text-accent ${
       isActive ? 'border-accent text-accent' : 'border-transparent'
     }`
 
   const langButtonClass = (code: string) =>
-    `rounded border px-2 py-1 text-sm font-semibold transition-colors ${
+    `rounded-full border px-2.5 py-1 text-sm font-semibold transition-colors ${
       i18n.resolvedLanguage === code
         ? 'border-accent bg-accent text-white'
         : 'border-border text-neutral-950 hover:border-accent'
@@ -51,13 +59,18 @@ function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b-2 border-accent bg-white p-4">
+    <header
+      className={`sticky top-0 z-50 border-b-2 border-accent p-4 transition-all duration-300 ${
+        scrolled ? 'bg-white/75 shadow-soft backdrop-blur-lg' : 'bg-white'
+      }`}
+    >
       <div className="flex items-center justify-between">
-        <img src={logo} alt="APM Gestión" className="h-14 w-auto" />
+        <img src={logo} alt="APM Gestió" className="h-14 w-auto" />
 
         <nav className="hidden items-center lg:flex lg:gap-8">
-          {linksBefore.map(({ to, label }) => (
+          {linksBefore.map(({ to, label, icon: Icon }) => (
             <NavLink key={to} to={to} end={to === '/'} className={navLinkClass}>
+              <Icon size={16} strokeWidth={1.75} />
               {label}
             </NavLink>
           ))}
@@ -73,10 +86,11 @@ function Header() {
             <button
               type="button"
               onFocus={() => setServicesHover(true)}
-              className={`border-b-2 pb-1 font-medium transition-colors hover:text-accent ${
+              className={`inline-flex items-center gap-1.5 border-b-2 pb-1 font-medium transition-colors hover:text-accent ${
                 servicesActive ? 'border-accent text-accent' : 'border-transparent text-neutral-950'
               }`}
             >
+              <Briefcase size={16} strokeWidth={1.75} />
               {t('nav.servicios')}
             </button>
             <AnimatePresence>
@@ -86,7 +100,7 @@ function Header() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: -8, scale: 0.97 }}
                   transition={{ duration: 0.15, ease: 'easeOut' }}
-                  className="absolute top-full left-1/2 z-10 mt-3 w-60 origin-top -translate-x-1/2 rounded-xl border border-border bg-white p-2 shadow-lg"
+                  className="absolute top-full left-1/2 z-10 mt-3 w-60 origin-top -translate-x-1/2 rounded-xl bg-white p-2 shadow-soft-lg"
                 >
                   <span className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-t border-l border-border bg-white" />
                   {serviceLinks.map(({ to, label, icon: Icon }) => (
@@ -110,8 +124,9 @@ function Header() {
             </AnimatePresence>
           </div>
 
-          {linksAfter.map(({ to, label }) => (
+          {linksAfter.map(({ to, label, icon: Icon }) => (
             <NavLink key={to} to={to} end={to === '/'} className={navLinkClass}>
+              <Icon size={16} strokeWidth={1.75} />
               {label}
             </NavLink>
           ))}
@@ -157,8 +172,9 @@ function Header() {
             className="overflow-hidden lg:hidden"
           >
             <nav className="flex flex-col items-center gap-4 pt-6">
-              {linksBefore.map(({ to, label }) => (
+              {linksBefore.map(({ to, label, icon: Icon }) => (
                 <NavLink key={to} to={to} end={to === '/'} className={navLinkClass} onClick={closeMenu}>
+                  <Icon size={16} strokeWidth={1.75} />
                   {label}
                 </NavLink>
               ))}
@@ -166,11 +182,12 @@ function Header() {
               <div className="flex flex-col items-center">
                 <button
                   type="button"
-                  className={`border-b-2 pb-1 font-medium transition-colors hover:text-accent ${
+                  className={`inline-flex items-center gap-1.5 border-b-2 pb-1 font-medium transition-colors hover:text-accent ${
                     servicesActive ? 'border-accent text-accent' : 'border-transparent text-neutral-950'
                   }`}
                   onClick={() => setServicesOpen((open) => !open)}
                 >
+                  <Briefcase size={16} strokeWidth={1.75} />
                   {t('nav.servicios')}
                 </button>
                 <AnimatePresence>
@@ -200,8 +217,9 @@ function Header() {
                 </AnimatePresence>
               </div>
 
-              {linksAfter.map(({ to, label }) => (
+              {linksAfter.map(({ to, label, icon: Icon }) => (
                 <NavLink key={to} to={to} end={to === '/'} className={navLinkClass} onClick={closeMenu}>
+                  <Icon size={16} strokeWidth={1.75} />
                   {label}
                 </NavLink>
               ))}

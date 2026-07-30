@@ -35,7 +35,7 @@ function QuienesSomos() {
             variants={itemVariants}
             src={oficina}
             alt={t('quienesSomos.title')}
-            className="aspect-video w-full rounded-2xl object-cover shadow-sm"
+            className="aspect-video w-full rounded-2xl object-cover shadow-soft"
           />
         </div>
       </Reveal>

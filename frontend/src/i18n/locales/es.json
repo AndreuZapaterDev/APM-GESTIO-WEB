@@ -7,7 +7,7 @@
     "actualidad": "Actualidad"
   },
   "home": {
-    "title": "APM Gestión",
+    "title": "APM Gestió",
     "tagline": "Asesoría Fiscal, Laboral y Contable",
     "hero": {
       "ctaPrimary": "Solicitar información",
@@ -45,8 +45,38 @@
       "description": "Contamos con un equipo altamente capacitado y con una amplia experiencia en las diversas áreas del derecho."
     },
     "calendar": {
-      "heading": "Calendario",
-      "placeholder": "Contenido en construcción"
+      "heading": "Calendario fiscal y laboral",
+      "subheading": "Los próximos vencimientos que no te puedes perder.",
+      "items": [
+        {
+          "title": "IVA trimestral (Modelo 303)",
+          "description": "Declaración e ingreso del IVA correspondiente al trimestre."
+        },
+        {
+          "title": "Retenciones e ingresos a cuenta (Modelo 111)",
+          "description": "Retenciones de IRPF practicadas a trabajadores y profesionales."
+        },
+        {
+          "title": "Pago fraccionado IRPF (Modelo 130/131)",
+          "description": "Pago a cuenta del IRPF para autónomos y profesionales."
+        },
+        {
+          "title": "Resumen anual de IVA (Modelo 390)",
+          "description": "Declaración resumen de las operaciones de IVA del ejercicio."
+        },
+        {
+          "title": "Impuesto sobre Sociedades (Modelo 200)",
+          "description": "Declaración anual del Impuesto sobre Sociedades."
+        },
+        {
+          "title": "Seguros Sociales (Sistema RED)",
+          "description": "Cotizaciones mensuales a la Seguridad Social."
+        }
+      ],
+      "today": "Hoy",
+      "tomorrow": "Mañana",
+      "inDays": "En {{count}} días",
+      "disclaimer": "Fechas orientativas. Consúltanos para confirmar los plazos exactos de tu caso."
     },
     "contact": {
       "heading": "Solicitud de contacto",

@@ -2,7 +2,8 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { BarChart3, Check } from 'lucide-react'
 import asesoria from '../../assets/asesoria.jpg'
-import { Reveal, Divider, itemVariants, listContainerVariants } from '../../components/Reveal'
+import { Reveal, itemVariants, listContainerVariants } from '../../components/Reveal'
+import { ContactForm } from '../../components/ContactForm'
 
 function Contable() {
   const { t } = useTranslation()
@@ -32,13 +33,11 @@ function Contable() {
         </motion.p>
       </Reveal>
 
-      <Divider />
-
       <Reveal className="px-5 py-16 lg:px-0">
-        <div className="mx-auto flex max-w-3xl flex-col gap-10">
+        <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:items-start">
           <motion.ul
             variants={listContainerVariants}
-            className="flex flex-col gap-4 rounded-2xl border border-border bg-white p-8 text-left text-neutral-600 shadow-sm lg:p-10"
+            className="flex flex-col gap-4 rounded-2xl bg-white p-8 text-left text-neutral-600 shadow-soft lg:p-10"
           >
             {items.map((item) => (
               <motion.li key={item} variants={itemVariants} className="flex items-start gap-3">
@@ -49,12 +48,15 @@ function Contable() {
               </motion.li>
             ))}
           </motion.ul>
-          <motion.img
-            variants={itemVariants}
-            src={asesoria}
-            alt={t('servicios.contable.title')}
-            className="aspect-video w-full rounded-2xl object-cover shadow-sm"
-          />
+          <div className="flex flex-col gap-8">
+            <motion.img
+              variants={itemVariants}
+              src={asesoria}
+              alt={t('servicios.contable.title')}
+              className="aspect-video w-full rounded-2xl object-cover shadow-soft"
+            />
+            <ContactForm />
+          </div>
         </div>
       </Reveal>
     </>

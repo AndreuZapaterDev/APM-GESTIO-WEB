@@ -7,7 +7,7 @@
     "actualidad": "News"
   },
   "home": {
-    "title": "APM Gestión",
+    "title": "APM Gestió",
     "tagline": "Tax, Payroll and Accounting Advisory",
     "hero": {
       "ctaPrimary": "Request information",
@@ -45,8 +45,38 @@
       "description": "We have a highly trained team with extensive experience across the various areas of law."
     },
     "calendar": {
-      "heading": "Calendar",
-      "placeholder": "Content under construction"
+      "heading": "Tax and payroll calendar",
+      "subheading": "The upcoming deadlines you shouldn't miss.",
+      "items": [
+        {
+          "title": "Quarterly VAT (Form 303)",
+          "description": "Filing and payment of VAT for the quarter."
+        },
+        {
+          "title": "Withholding tax (Form 111)",
+          "description": "Income tax withholdings for employees and professionals."
+        },
+        {
+          "title": "IRPF installment payment (Form 130/131)",
+          "description": "Advance income tax payment for self-employed professionals."
+        },
+        {
+          "title": "Annual VAT summary (Form 390)",
+          "description": "Annual summary return of VAT transactions."
+        },
+        {
+          "title": "Corporate Tax (Form 200)",
+          "description": "Annual Corporate Tax return."
+        },
+        {
+          "title": "Social Security contributions (RED System)",
+          "description": "Monthly Social Security contributions."
+        }
+      ],
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "inDays": "In {{count}} days",
+      "disclaimer": "Dates are indicative. Contact us to confirm the exact deadlines for your situation."
     },
     "contact": {
       "heading": "Contact request",

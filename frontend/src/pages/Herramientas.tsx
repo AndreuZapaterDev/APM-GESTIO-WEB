@@ -12,5 +12,4 @@ function Herramientas() {
     </section>
   )
 }
-
 export default Herramientas

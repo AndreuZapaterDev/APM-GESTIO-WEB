@@ -45,8 +45,38 @@
       "description": "Comptem amb un equip altament capacitat i amb una àmplia experiència en les diverses àrees del dret."
     },
     "calendar": {
-      "heading": "Calendari",
-      "placeholder": "Contingut en construcció"
+      "heading": "Calendari fiscal i laboral",
+      "subheading": "Els propers venciments que no et pots perdre.",
+      "items": [
+        {
+          "title": "IVA trimestral (Model 303)",
+          "description": "Declaració i ingrés de l'IVA corresponent al trimestre."
+        },
+        {
+          "title": "Retencions i ingressos a compte (Model 111)",
+          "description": "Retencions d'IRPF practicades a treballadors i professionals."
+        },
+        {
+          "title": "Pagament fraccionat IRPF (Model 130/131)",
+          "description": "Pagament a compte de l'IRPF per a autònoms i professionals."
+        },
+        {
+          "title": "Resum anual d'IVA (Model 390)",
+          "description": "Declaració resum de les operacions d'IVA de l'exercici."
+        },
+        {
+          "title": "Impost sobre Societats (Model 200)",
+          "description": "Declaració anual de l'Impost sobre Societats."
+        },
+        {
+          "title": "Assegurances Socials (Sistema RED)",
+          "description": "Cotitzacions mensuals a la Seguretat Social."
+        }
+      ],
+      "today": "Avui",
+      "tomorrow": "Demà",
+      "inDays": "En {{count}} dies",
+      "disclaimer": "Dates orientatives. Consulta'ns per confirmar els terminis exactes del teu cas."
     },
     "contact": {
       "heading": "Sol·licitud de contacte",
