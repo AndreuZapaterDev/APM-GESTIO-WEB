@@ -1,9 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { BarChart3, Check } from 'lucide-react'
-import asesoria from '../../assets/asesoria.jpg'
 import { Reveal, itemVariants, listContainerVariants } from '../../components/Reveal'
-import { ContactForm } from '../../components/ContactForm'
 
 function Contable() {
   const { t } = useTranslation()
@@ -34,30 +32,19 @@ function Contable() {
       </Reveal>
 
       <Reveal className="px-5 py-16 lg:px-0">
-        <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:items-start">
-          <motion.ul
-            variants={listContainerVariants}
-            className="flex flex-col gap-4 rounded-2xl bg-white p-8 text-left text-neutral-600 shadow-soft lg:p-10"
-          >
-            {items.map((item) => (
-              <motion.li key={item} variants={itemVariants} className="flex items-start gap-3">
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
-                  <Check size={14} strokeWidth={2.5} />
-                </span>
-                <span>{item}</span>
-              </motion.li>
-            ))}
-          </motion.ul>
-          <div className="flex flex-col gap-8">
-            <motion.img
-              variants={itemVariants}
-              src={asesoria}
-              alt={t('servicios.contable.title')}
-              className="aspect-video w-full rounded-2xl object-cover shadow-soft"
-            />
-            <ContactForm />
-          </div>
-        </div>
+        <motion.ul
+          variants={listContainerVariants}
+          className="mx-auto flex max-w-2xl flex-col gap-4 rounded-2xl bg-white p-8 text-left text-neutral-600 shadow-soft lg:p-10"
+        >
+          {items.map((item) => (
+            <motion.li key={item} variants={itemVariants} className="flex items-start gap-3">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <Check size={14} strokeWidth={2.5} />
+              </span>
+              <span>{item}</span>
+            </motion.li>
+          ))}
+        </motion.ul>
       </Reveal>
     </>
   )

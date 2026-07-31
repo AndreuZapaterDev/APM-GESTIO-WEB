@@ -77,14 +77,6 @@
       "tomorrow": "Demà",
       "inDays": "En {{count}} dies",
       "disclaimer": "Dates orientatives. Consulta'ns per confirmar els terminis exactes del teu cas."
-    },
-    "contact": {
-      "heading": "Sol·licitud de contacte",
-      "name": "Nom",
-      "email": "Correu electrònic",
-      "phone": "Telèfon",
-      "message": "Missatge",
-      "submit": "Enviar"
     }
   },
   "quienesSomos": {

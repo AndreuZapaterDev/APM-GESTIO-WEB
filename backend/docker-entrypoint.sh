@@ -5,6 +5,10 @@ if [ ! -f .env ]; then
   cp .env.example .env
 fi
 
+if [ ! -f vendor/autoload.php ]; then
+  composer install --no-interaction --prefer-dist
+fi
+
 until pg_isready -h "${DB_HOST:-db}" -p "${DB_PORT:-5432}" -U "${DB_USERNAME:-laravel}" >/dev/null 2>&1; do
   echo "Waiting for database..."
   sleep 2

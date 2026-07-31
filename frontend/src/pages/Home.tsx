@@ -15,7 +15,6 @@ import {
 } from 'lucide-react'
 import logo from '../assets/APMGESTIO_LOGO.png'
 import { Reveal, Divider, SectionHeading, containerVariants, itemVariants } from '../components/Reveal'
-import { ContactForm } from '../components/ContactForm'
 import { FiscalCalendar } from '../components/FiscalCalendar'
 
 const serviceIcons = [FileText, Users, BarChart3]
@@ -223,7 +222,7 @@ function Home() {
       <Divider />
 
       {/* Datos de contacto */}
-      <Reveal className="px-5 py-16 lg:px-0">
+      <Reveal id="contacto" className="px-5 py-16 lg:px-0">
         <motion.div
           variants={itemVariants}
           className="mx-auto flex max-w-3xl flex-col items-center gap-6 rounded-2xl bg-neutral-950 px-8 py-12 text-center text-white lg:flex-row lg:justify-between lg:text-left"
@@ -252,14 +251,6 @@ function Home() {
             </a>
           </div>
         </motion.div>
-      </Reveal>
-
-      <Divider />
-
-      {/* Solicitud de contacto */}
-      <Reveal id="contacto" className="px-5 py-16 lg:px-0">
-        <SectionHeading>{t('home.contact.heading')}</SectionHeading>
-        <ContactForm className="mx-auto flex max-w-md flex-col gap-4 rounded-2xl bg-white p-8 shadow-soft" />
       </Reveal>
     </>
   )

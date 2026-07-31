@@ -77,14 +77,6 @@
       "tomorrow": "Tomorrow",
       "inDays": "In {{count}} days",
       "disclaimer": "Dates are indicative. Contact us to confirm the exact deadlines for your situation."
-    },
-    "contact": {
-      "heading": "Contact request",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "message": "Message",
-      "submit": "Send"
     }
   },
   "quienesSomos": {

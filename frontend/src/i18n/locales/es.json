@@ -77,14 +77,6 @@
       "tomorrow": "Mañana",
       "inDays": "En {{count}} días",
       "disclaimer": "Fechas orientativas. Consúltanos para confirmar los plazos exactos de tu caso."
-    },
-    "contact": {
-      "heading": "Solicitud de contacto",
-      "name": "Nombre",
-      "email": "Correo electrónico",
-      "phone": "Teléfono",
-      "message": "Mensaje",
-      "submit": "Enviar"
     }
   },
   "quienesSomos": {

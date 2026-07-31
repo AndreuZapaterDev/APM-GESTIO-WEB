@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 5173
 
-CMD ["npm", "run", "dev", "--", "--host"]
+CMD ["sh", "-c", "[ -d node_modules/vite ] || npm install; npm run dev -- --host"]
